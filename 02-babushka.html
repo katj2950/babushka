@@ -138,18 +138,14 @@
 
 		.luk {
 			position: fixed;
-			right: 140px;
-			top: 80px;
+			right: 0;
 			font-size: 2rem;
-
 		}
 
 		footer {
 			background-color: darkgrey;
 			font-family: sans-serif;
 			padding: 10px;
-			position: relative;
-			height: 10px;
 
 		}
 
@@ -163,6 +159,8 @@
 			position: relative;
 			left: 500px;
 			color: white;
+
+
 		}
 	</style>
 
@@ -244,6 +242,7 @@
 
 					dest.appendChild(klon);
 					dest.lastElementChild.addEventListener("click", () => {
+						location.href = `singleview.html?kategori=${ret.gsx$kategori.$t}`;
 						visSingle(ret)
 					});
 				}
